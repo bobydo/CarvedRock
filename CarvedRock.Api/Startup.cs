@@ -24,7 +24,7 @@ namespace CarvedRock.Api
             services.AddSingleton<ProductRepository>();
         }
 
-        public void Configure(IApplicationBuilder app, CarvedRockDbContext dbContext)
+        public void Configure(CarvedRockDbContext dbContext)
         {
             dbContext.Seed();
         }

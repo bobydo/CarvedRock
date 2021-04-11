@@ -8,6 +8,11 @@ namespace CarvedRock.Api.Data
 {
     public static class InitialData
     {
+        /// <summary>
+        /// extension method for CarvedRockDbContext
+        /// it is called by dbContext.Seed(); in startup.cs
+        /// </summary>
+        /// <param name="dbContext"></param>
         public static void Seed(this CarvedRockDbContext dbContext)
         {
             if (!dbContext.Products.Any())
